@@ -32,3 +32,15 @@ variable "vsphere_virtual_machine_name" {
   description = "Name for the new vSphere virtual machine"
   type        = string
 }
+
+variable "num_cpus" {
+  description = "The number of CPUs for the virtual machine"
+  type        = number
+  default     = 2
+}
+
+variable "memory" {
+  description = "The amount of memory for the virtual machine in MB"
+  type        = number
+  default     = 2048
+}
